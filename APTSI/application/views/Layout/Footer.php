@@ -1,3 +1,4 @@
+
 		<div class="footer">
             <div class="pull-right">
                 10GB of <strong>250GB</strong> Free.
@@ -27,7 +28,7 @@
                     showMethod: 'slideDown',
                     timeOut: 4000
                 };
-                toastr.success('Responsive Admin Theme', 'Welcome to INSPINIA');
+                toastr.success('Aplikasi Pelaporan Tempat Sampah Ilegal Dinas Kebersihan Kota Bogor', 'Welcome to APTSI');
 
             }, 1300);
         });

@@ -1,31 +1,54 @@
 <?php $this->load->view('Layout/Header');?>
-<div class="wrapper wrapper-content">
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
-</div>
+<div class="wrapper wrapper-content">    
+ <div class="row">
+                    <div class="col-lg-3">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <span class="label label-success pull-right">New</span>
+                                <h5>Laporan Baru</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">5</h1>                               
+                                <small>Laporan Tempat Sampah Ilegal</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <span class="label label-info pull-right">Prosess</span>
+                                <h5>Laporan Prosess</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">4</h1>
+                                <small>Penanganan Laporan Sampah</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <span class="label label-primary pull-right">Finnish</span>
+                                <h5>Laporan Selesai</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">7</h1>
+                                <small>Laporan Sudah di Selesaikan</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <span class="label label-danger pull-right">News</span>
+                                <h5>Post Berita</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">7</h1>
+                                <small>Jumlah Posting Berita</small>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        </div>
 <?php $this->load->view('Layout/Footer');?>

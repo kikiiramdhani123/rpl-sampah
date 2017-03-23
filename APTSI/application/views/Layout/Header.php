@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>APTSI | Dashboard</title>
+	<link rel="shortcut icon" href="<?php echo base_url('asset/images/icon.png');?>" />
 	<link rel="stylesheet" type="text/css" media="all" href=" <?php echo base_url();?>asset/style.css" />
 </head>
 <body>
@@ -33,23 +34,21 @@
                     </div>
                 </li>
                 <li>
-                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a>
+                    <a href="<?php echo base_url();?>"><i class="fa fa-th-large"></i> <span class="nav-label">Beranda</span></a>
                 </li>
                 <li>
-                    <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Admin</span></a>
+                    <a href="<?php echo site_url();?>/Admin/berita"><i class="fa fa-diamond"></i> <span class="nav-label">Berita</span></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Laporan</span><span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
-                        <li><a href="graph_flot.html">Flot Charts</a></li>
-                        <li><a href="graph_morris.html">Morris.js Charts</a></li>
-                        <li><a href="graph_rickshaw.html">Rickshaw Charts</a></li>
-                        <li><a href="graph_chartjs.html">Chart.js</a></li>
-                        <li><a href="graph_chartist.html">Chartist</a></li>
-                        <li><a href="c3.html">c3 charts</a></li>
-                        <li><a href="graph_peity.html">Peity Charts</a></li>
-                        <li><a href="graph_sparkline.html">Sparkline Charts</a></li>
+                        <li><a href="graph_flot.html">Laporan Baru </a></li>
+                        <li><a href="graph_morris.html">Laporan Proses</a></li>
+                        <li><a href="graph_rickshaw.html">Laporan Selesai</a></li>
                     </ul>
+                </li>
+				<li>
+                    <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">User Management</span>  </a>
                 </li>
                 <li>
                     <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
@@ -60,9 +59,7 @@
                         <li><a href="email_template.html">Email templates</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span>  </a>
-                </li>
+                
                 <li>
                     <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span></a>
                 </li>
@@ -247,4 +244,4 @@
             </ul>
         </nav>
         </div>
-        
+    
