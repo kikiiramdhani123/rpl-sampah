@@ -161,7 +161,7 @@
 
 <div class="login">
     <h1>Login</h1>
-    <form method="post" action="<?php echo site_url();?>backoffice/login"">
+    <form method="post" action="<?php echo site_url();?>Admin/login"">
     <input type="text" name="username" placeholder="Username" required="required" id="username"/>
     <input type="password" name="password" placeholder="Password" required="required" id="password" />
     <input type="submit" class="btn btn-primary btn-block btn-large" value="Login">
