@@ -1,0 +1,10 @@
+.pagination ul > li a {
+    color: #fff;
+    border-color: #00b74b;
+    background-color: #00b74b;
+	margin-bottom:10px;
+}
+
+.pagination ul > li a:hover {
+    background-color: #6cf6a5;
+}

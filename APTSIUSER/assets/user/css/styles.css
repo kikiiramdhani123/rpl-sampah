@@ -1,0 +1,87 @@
+/*--------------------*/
+/*    CSS TAMBAHAN    */
+/*--------------------*/
+
+/*--------------------*/
+/*       PROFIL       */
+/*--------------------*/
+.service-icon {	
+  height: 130px;
+  width: 130px;
+}
+.clients.carousel .client {
+	height: 100%;
+}
+
+
+/*--------------------*/
+/* CAROUSEL PAGI ICON */
+/*--------------------*/
+.carousel-pagi a.selected{
+	background-color: #3fc35f;
+}
+.carousel-pagi a:hover{
+	background-color: #3fc35f;
+}
+.carousel-pagi a{
+	background-color: #1F3A93;
+}
+
+
+/*--------------------*/
+/*        TEXT        */
+/*--------------------*/
+.custom-font-size{
+	font-size: 16px;
+}
+
+#banner {
+  text-transform: uppercase;
+  padding: 40px 0;
+  background: #ffffff;
+}
+#banner h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  float: left;
+  line-height: 39px;
+  margin: 0;
+}
+#banner a {
+  float: right;
+  display: block;
+  line-height: 35px;
+  padding: 0 50px;
+  border: 2px solid #303030;
+  color: #269d20;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 3px;
+}
+#banner2 {
+  text-transform: uppercase;
+  padding: 73px 0;
+  background: rgba(243, 208, 40, 0.95);
+}
+#banner2 h5 {
+  font-family: 'Montserrat', sans-serif;
+  color: #303030;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin: 0;
+}
+#banner2 h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #303030;
+  line-height: 1.4;
+  margin: 0;
+}
+#banner2 a {
+  float: right;
+  display: block;
+  line-height: 35px;
+  padding: 0 22px;
+  border: 2px solid #303030;
+  color: #303030;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 3px;
+}
