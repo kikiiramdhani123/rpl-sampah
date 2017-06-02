@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2017 at 08:54 AM
+-- Generation Time: Jun 02, 2017 at 09:38 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -92,7 +92,8 @@ INSERT INTO `laporan` (`id_laporan`, `nama_pelapor`, `no_telp`, `tgl_laporan`, `
 (4, 'Nop', '089624586448', '2017-04-27 15:48:03', 'duhai bau sampah ', 'Bantarjati', 'lapor2.jpg', '', '2017-04-27 19:23:40', 1),
 (5, 'Noop', '089624386448', '2017-06-01 16:48:03', 'euh bau sampah', 'BantarJati', '_MG_35371.JPG', '0', '0000-00-00 00:00:00', 1),
 (6, 'Fina', '089624386448', '2017-06-01 22:24:03', 'Sampah berserakan', 'Jalan Palayu Raya, Tegal Gundil, Bogor City, West Java, Indonesia', 'IMG_0349.jpg', '0', '0000-00-00 00:00:00', 1),
-(7, 'Dwi Parma', '089624386448', '2017-06-02 06:00:58', 'sampah berserakan', 'Jl. Malabar, Tegallega, Bogor City, West Java, Indonesia', 'IMG_03491.jpg', '0', '0000-00-00 00:00:00', 1);
+(7, 'Dwi Parma', '089624386448', '2017-06-02 06:00:58', 'sampah berserakan', 'Jl. Malabar, Tegallega, Bogor City, West Java, Indonesia', 'IMG_03491.jpg', '0', '0000-00-00 00:00:00', 1),
+(8, 'Noopitah', '089624386448', '2017-06-02 07:30:17', 'ini complete toy', 'Jl. Lincar II No.7, Tegal Gundil, Bogor Utara, Kota Bogor, Jawa Barat 16152, Indonesia', 'IMG_03493.jpg', '0', '0000-00-00 00:00:00', 1);
 
 --
 -- Indexes for dumped tables
@@ -134,7 +135,7 @@ ALTER TABLE `berita`
 -- AUTO_INCREMENT for table `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `id_laporan` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_laporan` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
