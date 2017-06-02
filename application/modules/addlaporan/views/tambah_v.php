@@ -17,11 +17,12 @@ function initialize() {
   var geocoder = new google.maps.Geocoder();
   var mapOptions = {
     center: latlng,
-    zoom: 17,
+    zoom: 13,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     draggableCursor: "crosshair",
     streetViewControl: false
   };
+
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
   google.maps.event.addListener(map, "click", function (location) {
@@ -61,7 +62,7 @@ function initialize() {
       map.fitBounds(place.geometry.viewport);
     } else {
       map.setCenter(place.geometry.location);
-      map.setZoom(15);  // Why 17? Because it looks good.
+      map.setZoom(17);  // Why 17? Because it looks good.
     }
     marker.setIcon();
     marker.setPosition(place.geometry.location);
@@ -70,6 +71,26 @@ function initialize() {
 
   });
 
+
+  document.getElementById('geoloc').onclick=function(){
+    if(navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+        map.setCenter(pos);
+        marker.setPosition(pos);
+
+        setGeoCoder(pos);
+        setLatLong(position.coords.latitude, position.coords.longitude);
+
+      }, function() {
+        handleNoGeolocation(true);
+      });
+    } else {
+      // Browser doesn't support Geolocation
+      handleNoGeolocation(false);
+    }
+  };
 
   function setLatLong(lat, long) {
     document.getElementById('lat').value=lat;
@@ -121,10 +142,16 @@ google.maps.event.addDomListener(window, 'load', initialize);
                       <input class="form-control" type="text" name="no_telp" id="no_telp" maxlength="12" required />
                     </div><!-- .form-field -->
                   </div><!-- .col-sm-6 -->
-                  <div class="col-sm-12">
+                  <div class="col-sm-10">
                       <div class="form-field">
                         <label for="nama_kontak">Lokasi<span class="require">(required)</span></label>
                         <input class="form-control" type="text" name="lokasi" id="lokasi" required /> 
+                      </div><!-- .form-field -->
+                  </div><!-- .col-sm-6 -->
+                  <div class="col-sm-2">
+                      <div class="form-field">
+                        <label for="nama_kontak"><span class="require"></span></label>
+                        <button id="geoloc" class="btn btn-primary">Get My Location</button> 
                       </div><!-- .form-field -->
                   </div><!-- .col-sm-6 -->
                   <input type = "hidden" id="lat" disabled />
@@ -163,4 +190,3 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </div><!-- /page-content -->
   </body>
 </html>
-
